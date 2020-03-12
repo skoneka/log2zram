@@ -1,6 +1,6 @@
 #olddir /opt/zram/log.old
 #createolddir 755 root root
-renamecopy
+#renamecopy
 
 /usr/local/share/log2zram/log/log2zram.log
 {
