@@ -1,6 +1,6 @@
 [Unit]
 Description=log2zram
-After=local-fs.target
+After=ssh.service
 Before=reboot.target halt.target zram-swap-config.service zramdrive.service
 
 [Service]
@@ -11,5 +11,5 @@ TimeoutSec=240
 RemainAfterExit=yes
 
 [Install]
-WantedBy=basic.target
+WantedBy=multi-user.target
 
